@@ -1,17 +1,14 @@
-
-shopping_cart_list = []
-
+from product import Product
 
 class ShoppingCart:
     
     def __init__(self):
-        from product import Product
-        product_info = Product()
+        self.shopping_cart_list = []
         self.in_shopping_cart = product_info.name
         self.price_in_shopping_cart = int(product_info.price)
 
-    def add_product_to_cart(self):     
-        shopping_cart_list = []
+    def add_product_to_cart(self, product):     
+        self.shopping_cart_list.append(product)
         item_name = self.in_shopping_cart
         shopping_cart_list.append(item_name)
         item_price = self.price_in_shopping_cart
