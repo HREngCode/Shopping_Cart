@@ -1,24 +1,24 @@
-from customer import Customer
 from product import Product
+from customer import Customer
 from shopping_cart import ShoppingCart
 
 print('Please type the customer name')
 customer_one_info = Customer(input())
 
-order_one = ShoppingCart()
-order_one.add_product_to_cart()
-item_cost_one = int(order_one.price_in_shopping_cart)
-print(item_cost_one)
+# order_one = ShoppingCart()
+# order_one.add_product_to_cart()
+# item_cost_one = int(order_one.price_in_shopping_cart)
+# print(item_cost_one)
 
-order_two = ShoppingCart()
-order_two.add_product_to_cart()
-item_cost_two = int(order_two.price_in_shopping_cart)
-print(item_cost_two)
+# order_two = ShoppingCart()
+# order_two.add_product_to_cart()
+# item_cost_two = int(order_two.price_in_shopping_cart)
+# print(item_cost_two)
 
-order_three = ShoppingCart()
-order_three.add_product_to_cart()
-item_cost_three = int(order_three.price_in_shopping_cart)
-print(item_cost_three)
+# order_three = ShoppingCart()
+# order_three.add_product_to_cart()
+# item_cost_three = int(order_three.price_in_shopping_cart)
+# print(item_cost_three)
 
 cart = ShoppingCart()
 cart.add_product_to_cart(Product)
