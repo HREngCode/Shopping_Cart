@@ -4,15 +4,15 @@ class ShoppingCart:
     
     def __init__(self):
         self.shopping_cart_list = []
-        self.in_shopping_cart = product_info.name
-        self.price_in_shopping_cart = int(product_info.price)
+#         self.in_shopping_cart = product_info.name
+#         self.price_in_shopping_cart = int(product_info.price)
 
     def add_product_to_cart(self, product):     
         self.shopping_cart_list.append(product)
-        item_name = self.in_shopping_cart
-        shopping_cart_list.append(item_name)
-        item_price = self.price_in_shopping_cart
-        print(shopping_cart_list)   
+#         item_name = self.in_shopping_cart
+#         shopping_cart_list.append(item_name)
+#         item_price = self.price_in_shopping_cart
+#         print(shopping_cart_list)   
 
 #     # def calculate_total_cost(self):
 
