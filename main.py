@@ -21,10 +21,24 @@ customer_one_info = Customer(input())
 # print(item_cost_three)
 
 cart = ShoppingCart()
-cart.add_product_to_cart(Product)
+cart.add_product_to_cart(Product("Tires", 50, "Auto"))
+# another option would be 
+# tires = Product("Tires", 50, "Auto")
+# cart.add_product_to_cart(tires)
+# print(cart.products[0].name)
 
-total_cost = (item_cost_one) + (item_cost_two) + (item_cost_three)
-print(f'Your total cost is {total_cost}')
+# a third option would be
+# for product in cart.products:
+#   print(product.name)
+#   print(product.price)
+#   print(product.category) 
+
+cart.products[0].name
+cart.products[0].price
+cart.products[0].category
+
+# total_cost = (item_cost_one) + (item_cost_two) + (item_cost_three)
+# print(f'Your total cost is {total_cost}')
 
 # price_total = ShoppingCart()
 # total_cost = price_total.price_in_shopping_cart
