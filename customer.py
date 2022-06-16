@@ -9,8 +9,6 @@ class Customer:
         self.customer_name = name
         self.cart_list = customer_cart.products
 
-    cart = ShoppingCart()
-
     def new_item_to_cart(self):
         cart.add_product_to_cart(Product("tire", 100, "Auto"))
         cart.add_product_to_cart(Product("wheels", 50, "Auto"))
