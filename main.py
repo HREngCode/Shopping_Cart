@@ -1,48 +1,31 @@
-from product import Product
 from customer import Customer
+from product import Product
 from shopping_cart import ShoppingCart
 
-print('Please type the customer name')
-customer_one_info = Customer(input())
-
-# order_one = ShoppingCart()
-# order_one.add_product_to_cart()
-# item_cost_one = int(order_one.price_in_shopping_cart)
-# print(item_cost_one)
-
-# order_two = ShoppingCart()
-# order_two.add_product_to_cart()
-# item_cost_two = int(order_two.price_in_shopping_cart)
-# print(item_cost_two)
-
-# order_three = ShoppingCart()
-# order_three.add_product_to_cart()
-# item_cost_three = int(order_three.price_in_shopping_cart)
-# print(item_cost_three)
+customer_one_info = Customer("Chad")
 
 cart = ShoppingCart()
-cart.add_product_to_cart(Product("Tires", 50, "Auto"))
-# another option would be 
-# tires = Product("Tires", 50, "Auto")
-# cart.add_product_to_cart(tires)
-# print(cart.products[0].name)
+cart.add_product_to_cart(Product("tire", 100, "Auto"))
+cart.add_product_to_cart(Product("wheels", 50, "Auto"))
+cart.add_product_to_cart(Product("valves", 10, "Auto"))
+cart.add_product_to_cart(Product("lug nuts", 5, "Auto"))
 
-# a third option would be
-# for product in cart.products:
-#   print(product.name)
-#   print(product.price)
-#   print(product.category) 
+customer_one_info.new_item_to_cart("Chad")
 
-cart.products[0].name
-cart.products[0].price
-cart.products[0].category
+total_in_cart = cart.calculate_total_cost()
 
-# total_cost = (item_cost_one) + (item_cost_two) + (item_cost_three)
-# print(f'Your total cost is {total_cost}')
+# cart.products[0].name
+# cart.products[0].price
+# cart.products[0].category
+
+print(cart.products[0].name)
+print(cart.products[0].price)
+print(cart.products[0].category)
+
 
 # price_total = ShoppingCart()
 # total_cost = price_total.price_in_shopping_cart
 # price_total.calculate_total()
 # print(total_cost)
 
-# print(f'The list consists of {add_new_order.in_shopping_cart}')
+# print(f'The list consists of {cart.shopping_cart_list}')
