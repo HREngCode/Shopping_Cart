@@ -1,23 +1,17 @@
 from customer import Customer
 from product import Product
-from shopping_cart import ShoppingCart
 
-customer_one_info = Customer("Chad")
+customer_one = Customer("Chad")
+product_one = Product("tire", 100, "Auto")
+product_two = Product("wheels", 50, "Auto")
+product_three = Product("valves", 10, "Auto")
+product_four = Product("lug nuts", 5, "Auto")
 
-total_in_cart = cart.calculate_total_cost()
-
-# cart.products[0].name
-# cart.products[0].price
-# cart.products[0].category
-
-print(cart.products[0].name)
-print(cart.products[0].price)
-print(cart.products[0].category)
+customer_one.add_item_to_cart(product_one)
+customer_one.add_item_to_cart(product_two)
+customer_one.add_item_to_cart(product_three)
+customer_one.add_item_to_cart(product_four)
+customer_one.view_cart
 
 
-# price_total = ShoppingCart()
-# total_cost = price_total.price_in_shopping_cart
-# price_total.calculate_total()
-# print(total_cost)
 
-# print(f'The list consists of {cart.shopping_cart_list}')
