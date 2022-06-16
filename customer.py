@@ -1,7 +1,7 @@
 from shopping_cart import ShoppingCart
 from product import Product
 
-customer_cart = ShoppingCart()
+cart = ShoppingCart()
 
 class Customer:
 
@@ -9,13 +9,18 @@ class Customer:
         self.customer_name = name
         self.cart_list = customer_cart.products
 
+    cart = ShoppingCart()
 
-    def new_item_to_cart(self, name):
-        self.customer_name = name
-        self.cart_list = customer_cart.products
-        item_in_cart=ShoppingCart()
-        for product in self.cart_list:
-            print(item_in_cart.products[0].name)
+    def new_item_to_cart(self):
+        cart.add_product_to_cart(Product("tire", 100, "Auto"))
+        cart.add_product_to_cart(Product("wheels", 50, "Auto"))
+        cart.add_product_to_cart(Product("valves", 10, "Auto"))
+        cart.add_product_to_cart(Product("lug nuts", 5, "Auto"))
+#         self.customer_name = name
+#         self.cart_list = customer_cart.products
+#         item_in_cart=ShoppingCart()
+#         for product in self.cart_list:
+#             print(item_in_cart.products[0].name)
 
 
     #     self.product_name = customer_cart.products
