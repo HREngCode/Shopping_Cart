@@ -4,14 +4,6 @@ from shopping_cart import ShoppingCart
 
 customer_one_info = Customer("Chad")
 
-cart = ShoppingCart()
-cart.add_product_to_cart(Product("tire", 100, "Auto"))
-cart.add_product_to_cart(Product("wheels", 50, "Auto"))
-cart.add_product_to_cart(Product("valves", 10, "Auto"))
-cart.add_product_to_cart(Product("lug nuts", 5, "Auto"))
-
-customer_one_info.new_item_to_cart("Chad")
-
 total_in_cart = cart.calculate_total_cost()
 
 # cart.products[0].name
